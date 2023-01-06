@@ -13,24 +13,24 @@ const Hero = () => {
   useEffect(() => {
     gsap.fromTo(
       heroRefTop.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 0.5, delay: 0.5 },
+      { autoAlpha: 0, y: 100 },
+      { autoAlpha: 1, y: 0, duration: 2, delay: 1 },
     );
     gsap.fromTo(
       heroRefBottom.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 0.8, delay: 0.5 },
+      { autoAlpha: 0, y: 100 },
+      { autoAlpha: 1, y: 0, duration: 2, delay: 1.2 },
     );
     gsap.fromTo(
       heroCover.current,
-      { opacity: 0, x: 100 },
-      { opacity: 1, x: 0, duration: 0.8 },
+      { autoAlpha: 0, x: 100 },
+      { autoAlpha: 1, x: 0, duration: 0.8 },
     );
   }, []);
 
   return (
     <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
-      <div className={`${styles.innerWidth} mx-auto flex flex-col`}>
+      <div className="w-full mx-auto flex flex-col">
         <div className="flex justify-center items-center flex-col relative z-10">
           <h1 className={styles.heroHeading} ref={heroRefTop}>
             Metaverse
@@ -40,7 +40,7 @@ const Hero = () => {
             ref={heroRefBottom}
           >
             <h1 className={styles.heroHeading}>Ma</h1>
-            <div className={styles.heroDText}>D</div>
+            <div className={`${styles.heroDText} md:mt-[9px] mt-[0px]`} />
             <h1 className={styles.heroHeading}>NESS</h1>
           </div>
         </div>

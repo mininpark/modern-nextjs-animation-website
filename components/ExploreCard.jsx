@@ -1,10 +1,8 @@
 'use client';
 
-import { gsap } from 'gsap';
-import { useEffect, useRef } from 'react';
-import styles from '../styles';
+import { useRef } from 'react';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => {
+const ExploreCard = ({ id, imgUrl, title, active, handleClick }) => {
   const imgRef = useRef(null);
 
   // useEffect(() => {

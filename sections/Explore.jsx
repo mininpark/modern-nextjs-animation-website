@@ -1,16 +1,42 @@
 'use client';
 
-// import gsap from 'gsap';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from '../styles';
 import { MainText, ExploreCard, TitleText } from '../components';
 import { exploreWorlds } from '../constants';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Explore = () => {
+  const sectionExploreRef = useRef();
+
   const [active, setActive] = useState();
 
+  useEffect(() => {
+    gsap.fromTo(
+      sectionExploreRef.current,
+      { autoAlpha: 0, y: 100 },
+      {
+        duration: 2,
+        autoAlpha: 1,
+        ease: 'power',
+        y: -50,
+        scrollTrigger: {
+          trigger: sectionExploreRef.current,
+          scrub: 1,
+        },
+      },
+    );
+  });
+
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section
+      className={`${styles.paddings}`}
+      id="explore"
+      ref={sectionExploreRef}
+    >
       <div
         className={`${styles.innerWidth} mx-auto flex flex-col justify-center center-align`}
       >

@@ -58,7 +58,7 @@ export const TitleText = ({ title, textStyles }) => {
 
   return (
     <h2
-      className={`font-extrabold md:text-[64px] text-[40px] md:leading-[80px] leading-[54px] text-white break-words ${textStyles}`}
+      className={`font-extrabold md:text-[58px] text-[40px] md:leading-[70px] leading-[56px] text-white break-words ${textStyles}`}
       ref={mainTitleRef}
     >
       {title}

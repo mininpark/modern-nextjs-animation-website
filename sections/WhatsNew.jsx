@@ -33,7 +33,7 @@ const WhatsNew = () => {
   return (
     <section ref={sectionWhatsNewRef} className={`${styles.paddings} `}>
       <div
-        className={`${styles.innerWidth} mx-auto flex sm:flex-row flex-col items-center`}
+        className={`${styles.innerWidth} mx-auto flex sm:flex-row flex-col-reverse items-center`}
       >
         <div className="sm:w-1/2 w-full">
           <MainText title="| What's New?" textStyles="text-left" />
@@ -41,7 +41,7 @@ const WhatsNew = () => {
             title="What's new about Minaverse?"
             textStyles="text-left sm:text-[48px] sm:line-height-[30px]"
           />
-          <div className="flex flex-col-reverse sm:flex-row">
+          <div className="flex sm:flex-row flex-col">
             {newFeatures.map((feature, i) => (
               <Features
                 flexStyle="sm:w-1/2 w-full"

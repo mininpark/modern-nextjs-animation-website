@@ -4,6 +4,7 @@ import ExploreCard from './ExploreCard';
 import InsightCard from './InsightCard';
 import Footer from './Footer';
 import Features from './Features';
+import MapHover from './MapHover';
 
 export {
   Navbar,
@@ -13,4 +14,5 @@ export {
   ExploreCard,
   InsightCard,
   Footer,
+  MapHover,
 };

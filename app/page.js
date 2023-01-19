@@ -30,7 +30,6 @@ const Page = () => (
       <div className="gradient-03 z-0" />
       <div className="gradient-02 z-0" />
     </div>
-
     <Feedback />
     <Footer />
   </div>

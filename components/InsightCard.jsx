@@ -13,13 +13,16 @@ const InsightCard = ({ imgUrl, title, subtitle, key }) => (
         {subtitle}
       </p>
     </div>
-    <div className="w-[100px] h-[100px] border-2 border-[#F1F5F8] rounded-[50px] ml-[80px] relative">
+    <a
+      className="w-[100px] h-[100px] border-2 border-[#F1F5F8] rounded-[50px] ml-[80px] relative cursor-pointer"
+      href="/"
+    >
       <img
         src="/arrow.svg"
         alt="arrow"
         className="w-[30px] h-[30px] absolute top-[30px] left-[33px]"
       />
-    </div>
+    </a>
   </div>
 );
 

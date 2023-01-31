@@ -28,7 +28,7 @@ const GetStarted = () => {
         },
       },
     );
-  });
+  }, []);
 
   return (
     <section ref={sectionGetStartedRef} className={`${styles.paddings} `}>

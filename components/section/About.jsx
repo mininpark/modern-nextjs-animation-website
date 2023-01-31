@@ -26,7 +26,7 @@ const About = () => {
         },
       },
     );
-  });
+  }, []);
 
   return (
     <section className={`${styles.paddings} relative z-10`}>

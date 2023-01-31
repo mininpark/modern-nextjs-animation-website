@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
-
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from '../../styles';
@@ -28,7 +27,7 @@ const WhatsNew = () => {
         },
       },
     );
-  });
+  }, []);
 
   return (
     <section ref={sectionWhatsNewRef} className={`${styles.paddings} `}>

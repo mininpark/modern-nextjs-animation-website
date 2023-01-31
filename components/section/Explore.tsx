@@ -29,7 +29,7 @@ const Explore = () => {
         },
       },
     );
-  }, []);
+  });
 
   return (
     <section

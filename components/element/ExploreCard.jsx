@@ -4,56 +4,6 @@ import { useRef } from 'react';
 
 const ExploreCard = ({ id, imgUrl, title, active, handleClick }) => {
   const imgRef = useRef(null);
-
-  // useEffect(() => {
-  //   const imgEl = imgRef.current;
-  //   const animation = gsap.timeline({ paused: true });
-
-  //   const handleMouseEnter = () => {
-  //     if (getComputedStyle(imgEl).flexDirection === 'column') {
-  //       animation.to(imgEl, {
-  //         duration: 1,
-  //         height: '600px',
-  //       });
-  //       animation.to(
-  //         imgEl,
-  //         {
-  //           duration: 0.5,
-  //           autoAlpha: 1,
-  //         },
-  //         '<',
-  //       );
-  //       animation.play();
-  //     } else {
-  //       animation.to(imgEl, {
-  //         duration: 1,
-  //         width: imgEl.offsetWidth * 3,
-  //       });
-  //       animation.to(
-  //         imgEl,
-  //         {
-  //           duration: 0.5,
-  //           autoAlpha: 1,
-  //         },
-  //         '<',
-  //       );
-  //       animation.play();
-  //     }
-  //   };
-
-  //   const handleMouseLeave = () => {
-  //     animation.reverse();
-  //   };
-
-  //   imgEl.addEventListener('mouseenter', handleMouseEnter);
-  //   imgEl.addEventListener('mouseleave', handleMouseLeave);
-
-  //   return () => {
-  //     imgEl.removeEventListener('mouseenter', handleMouseEnter);
-  //     imgEl.removeEventListener('mouseleave', handleMouseLeave);
-  //   };
-  // }, [imgUrl]);
-
   return (
     // TODO: IF flex-row, the animation has to be changed to change height
     <div

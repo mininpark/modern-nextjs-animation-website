@@ -4,9 +4,9 @@ import { useRef, useEffect } from 'react';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import styles from '../styles';
-import { MainText, TitleText, Features } from '../components';
-import { startingFeatures } from '../constants';
+import styles from '../../styles';
+import { MainText, TitleText, Features } from '../element';
+import { startingFeatures } from '../../constants';
 
 gsap.registerPlugin(ScrollTrigger);
 

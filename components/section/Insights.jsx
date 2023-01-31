@@ -1,8 +1,8 @@
 'use client';
 
-import { InsightCard, MainText, TitleText } from '../components';
-import { insights } from '../constants';
-import styles from '../styles';
+import { InsightCard, MainText, TitleText } from '../element';
+import { insights } from '../../constants';
+import styles from '../../styles';
 
 const Insights = () => (
   <section className={`${styles.paddings}`} id="insight">

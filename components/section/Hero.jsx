@@ -3,7 +3,7 @@
 import { useRef, useEffect } from 'react';
 
 import gsap from 'gsap';
-import styles from '../styles';
+import styles from '../../styles';
 
 const Hero = () => {
   const heroRefTop = useRef();

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Features = ({ text, title, subtitle, imgUrl, flexStyle, index }) => {
   console.log(text);
   return (

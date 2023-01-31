@@ -3,8 +3,9 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import styles from '../styles';
-import { MainText } from '../components/CustomTexts';
+import styles from '../../styles';
+import { MainText } from '../element/CustomTexts';
+import React from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 

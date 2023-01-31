@@ -1,12 +1,11 @@
 'use client';
-
+import React from 'react';
 import { useRef, useEffect } from 'react';
-
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import styles from '../styles';
-import { MainText, TitleText, Features } from '../components';
-import { newFeatures } from '../constants';
+import styles from '../../styles';
+import { MainText, TitleText, Features } from '../element';
+import { newFeatures } from '../../constants';
 
 gsap.registerPlugin(ScrollTrigger);
 

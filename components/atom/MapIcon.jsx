@@ -1,27 +1,28 @@
 'use client';
 
 import React, { useState } from 'react';
-import './MapIcon.css';
+import './MapIcon.scss';
 
-const MapIcon = ({ peopleImgIndex, id, imgUrl, title }) => {
+const MapIcon = ({ id, imgUrl, title }) => {
   const [hover, setHover] = useState();
+  const index = [1, 2, 3];
 
   return (
     <div
-      className="img-container cursor-pointer"
+      className={`${id} img-container cursor-pointer`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       {hover ? (
-        <div className="w-[200px] h-[100px]">
-          <div>{id}</div>
+        <div className="img-hover">
+          <p className="title">{title}</p>
           <img src={imgUrl} />
         </div>
       ) : (
         <div className="img-icon">
           <div className="pulse" />
           <img
-            src={`/people-0${peopleImgIndex}.png`}
+            src={`/people-0${Math.floor(Math.random() * index.length) + 1}.png`}
             alt="peopleImg"
             className="rotate-45"
           />

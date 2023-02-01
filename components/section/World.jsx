@@ -43,26 +43,9 @@ const World = () => {
           ref={sectionWorldRef}
           className="relative"
         >
-          <img src="/map.png" alt="map" className="w-full" />
-          {/* TODO: HOW TO PUT OBJECTS IN MAP WITH DIFFEREN POSITIONS CSS */}
+          <img src="/map.png" alt="map" />
           {exploreWorlds.map((item, i) => (
-            <div key={i}>
-              <div className="absolute top-[20px] left-[100px]">
-                <MapIcon peopleImgIndex="1" {...item} />
-              </div>
-              <div className="absolute top-[300px] left-[200px]">
-                <MapIcon peopleImgIndex="2" {...item} />
-              </div>
-              <div className="absolute top-[200px] left-[450px]">
-                <MapIcon peopleImgIndex="3" {...item} />
-              </div>
-              <div className="absolute top-[100px] right-[370px]">
-                <MapIcon peopleImgIndex="1" {...item} />
-              </div>
-              <div className="absolute bottom-[200px] right-[150px]">
-                <MapIcon peopleImgIndex="3" {...item} />
-              </div>
-            </div>
+            <MapIcon {...item} className="relative" key={i} />
           ))}
         </div>
         <div className="gradient-04 z-0" />

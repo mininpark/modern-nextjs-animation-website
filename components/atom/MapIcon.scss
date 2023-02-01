@@ -1,7 +1,24 @@
-/* .pulse {
-  border: 1px solid red;
-} */
-.img-icon {
+.img {
+  &-hover {
+    width: 200px;
+    height: 150px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+    img{
+      border-radius: 24px;
+      width: auto;
+      height: 100%;
+    }
+    .title {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      color: #fff;
+    }
+  }
+  &-icon{
   border-radius: 50% 50% 50% 0;
   width: 80px;
   height: 80px;
@@ -11,9 +28,8 @@
   transform: rotate(-45deg);
   left: 50%;
   top: 50%;
-  /* margin: -20px 0 0 -20px; */
+  }
 }
-
 .pulse {
   background: #d6d4d4;
   border-radius: 50%;
@@ -39,6 +55,39 @@
   animation-delay: 1.1s;
 }
 
+.world {
+  &-1 {
+    position: absolute;
+    bottom: 25%;
+    right: 12%;
+    .img-hover {
+      left: 70%;
+    }
+  }
+  &-2 {
+    position: absolute;
+    top: 10%;
+    left: 43%;
+  }
+  &-3 {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+  }
+  &-4 {
+    position: absolute;
+    top: 15%;
+    right: 30%;
+  }
+  &-5 {
+    position: absolute;
+    top: 17%;
+    left: 16%;
+  }
+
+}
+
+
 @keyframes pulsate {
   0% {
     transform: scale(0.1, 0.1);
@@ -54,3 +103,9 @@
     opacity: 0;
   }
 }
+
+// @media screen and (max-width: 768px) {
+//   .img-hover {
+//     display:none;
+//   }
+// }

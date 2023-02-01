@@ -36,12 +36,12 @@ const Feedback = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col md:flex-row justify-between center-align gap-8`}
       >
         <div className="feedback-gradient" />
-        <div className="row xm:w-full lg:max-w-[420px] h-[full] md:h-[610px] rounded-[24px] glassmorphism text-white p-8 md:pt-[250px]">
+        <div className="row xm:w-full lg:max-w-[540px] h-[full] md:h-[610px] rounded-[24px] glassmorphism text-white p-8 md:pt-[250px]">
           <p className="font-extrabold text-[32px]">{feedback.name}</p>
           <p className="text-[18px]">{feedback.founder}</p>
           <p className="text-[24px]">{feedback.text}</p>
         </div>
-        <div className="row w-full max-w-[768px] h-[full] sm:h-[610px]">
+        <div className="row w-full max-w-[800px] h-[full] sm:h-[610px]">
           <img
             src="/planet-09.png"
             alt="feedback-img"

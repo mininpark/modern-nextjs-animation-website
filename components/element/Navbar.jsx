@@ -10,7 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     gsap.fromTo(navbarRef.current, 1, { y: -100 }, { y: 0, delay: 0.5 });
   }, []);
-
+  // TODO: ADD Serach Function and Navbar Collapsed
   return (
     <nav className={`${styles.xPaddings} py-8 relative`} ref={navbarRef}>
       <div className="absoulte inset-0 gradient-01" />

@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Explore = () => {
   const sectionExploreRef = useRef();
-
   const [active, setActive] = useState();
 
   useEffect(() => {

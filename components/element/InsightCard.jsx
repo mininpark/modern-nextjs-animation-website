@@ -7,7 +7,7 @@ const InsightCard = ({ imgUrl, title, subtitle, key }) => (
       alt={imgUrl + key}
       className="w-[270px] h-[250px] object-cover rounded-[32px]"
     />
-    <div className="w-[600px] max-w-[650px]  text-white text-center lg:text-left">
+    <div className="w-full max-w-[650px]  text-white text-center lg:text-left">
       <h4 className="text-[42px] leading-[50px]">{title}</h4>
       <p className="text-[20px] leading-[40px] text-gray-500 mt-[14px]">
         {subtitle}

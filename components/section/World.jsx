@@ -48,7 +48,6 @@ const World = () => {
             <MapIcon {...item} className="relative" key={i} />
           ))}
         </div>
-        <div className="gradient-04 z-0" />
       </div>
     </section>
   );

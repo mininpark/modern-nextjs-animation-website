@@ -24,9 +24,14 @@ const Page = () => (
       <div className="gradient-04 z-0" />
       <WhatsNew />
     </div>
-    <World />
-    <Insights />
-    <Feedback />
+    <div>
+      <World />
+      <div className="gradient-01 z-0" />
+      <Insights />
+      <div className="gradient-02 z-0" />
+      <Feedback />
+    </div>
+
     <Footer />
   </div>
 );

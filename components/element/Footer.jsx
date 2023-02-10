@@ -1,5 +1,7 @@
 'use client';
+
 import styles from '../../styles';
+import { socials } from '../../constants';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,18 +30,14 @@ const Footer = () => {
             Copyright © {currentYear} Minaverse. All rights reserved.
           </span>
           <div className="flex row gap-6">
-            <a href="/">
-              <img src="twitter.svg" alt="twitter" />
-            </a>
-            <a href="/">
-              <img src="linkedin.svg" alt="linkedin" />
-            </a>
-            <a href="/">
-              <img src="instagram.svg" alt="instagram" />
-            </a>
-            <a href="/">
-              <img src="facebook.svg" alt="facebook" />
-            </a>
+            {socials.map((social) => (
+              <img
+                key={social.name}
+                src={social.url}
+                alt={social.name}
+                className="w-[24px] h-[24px] object-contain cursor-pointer"
+              />
+            ))}
           </div>
         </div>
       </div>
